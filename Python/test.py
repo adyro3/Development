@@ -5,8 +5,7 @@ pygame.init()
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
 
-screen = pygame.display.set_mode(
-    (SCREEN_WIDTH, SCREEN_HEIGHT))  # set window size
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))  # set window size
 pygame.display.set_caption("Python Platformer")  # set window name
 
 
@@ -22,6 +21,6 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    pygame.display.update()
+    pygame.display.flip()
 
 pygame.quit()
